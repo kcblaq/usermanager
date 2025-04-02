@@ -7,8 +7,6 @@
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts --env-file .env",
     "build": "tsc",
-    "prebuild": "rimraf dist",
-    "postbuild": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
