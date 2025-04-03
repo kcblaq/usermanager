@@ -12,6 +12,15 @@ const UserSchema = new mongoose.Schema<IUser>(
       required: true,
       unique: true,
     },
+    role: {
+      type: String,
+      enum: ["admin", "user"],
+      default: "user",
+    },
+    isActive: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
